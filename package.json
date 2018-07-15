@@ -1,22 +1,24 @@
 {
-  "name": "@nico29/eslint-config",
-  "version": "1.0.1",
-  "description": "My eslint config",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nico29/eslint-config.git"
-  },
-  "keywords": [
-    "eslint"
-  ],
-  "author": "nmarien29@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nico29/eslint-config/issues"
-  },
-  "homepage": "https://github.com/nico29/eslint-config#readme",
-  "dependencies": {
-    "eslint": "^4.11.0"
-  }
+    "name": "@nico29/eslint-config",
+    "version": "1.0.1",
+    "description": "My eslint config",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nico29/eslint-config.git"
+    },
+    "keywords": [
+        "eslint"
+    ],
+    "author": "nmarien29@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nico29/eslint-config/issues"
+    },
+    "homepage": "https://github.com/nico29/eslint-config#readme",
+    "dependencies": {
+        "eslint": "^5.1.0"
+    },
+    "devDependencies": {
+        "lerna": "^2.11.0"
+    }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "@nico29/eslint-config-core",
+  "version": "1.0.1",
+  "description": "Common javascript configuration",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.2.3"
+  }
+}

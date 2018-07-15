@@ -1,0 +1,19 @@
+{
+    "name": "@nico29/eslint-config-react",
+    "version": "1.0.1",
+    "description": "Common React eslint rules",
+    "main": "index.js",
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+        "eslint": ">= 4",
+        "eslint-plugin-babel": "^5.1.0"
+    },
+    "dependencies": {
+        "@nico29/eslint-config-core": "^1.0.1",
+        "eslint-plugin-react": "^7.9.1"
+    }
+}

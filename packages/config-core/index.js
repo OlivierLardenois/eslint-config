@@ -1,36 +1,28 @@
 module.exports = {
     parserOptions: {
-        ecmaVersion: 2017,
+        ecmaVersion: 2018,
         sourceType: 'module',
         ecmaFeatures: {
-            experimentalObjectRestSpread: true
-        }
-    },
-    env: {
-        browser: true,
-        node: true,
-        jest: true,
-        jasmine: true
+            experimentalObjectRestSpread: true,
+        },
     },
     globals: {
-        Promise: true
+        Promise: true,
     },
+    parser: 'babel-eslint',
     extends: 'eslint:recommended',
     rules: {
-        'space-infix-ops': [
-            2,
-            {
-                int32Hint: false
-            }
+        'space-infix-ops': 'warn',
+        'no-constant-condition': ['error', { checkLoops: false }],
+        'no-empty': 'error',
+        'no-unused-vars': 'error',
+        curly: [
+            'warn',
+            'all',
         ],
-        'no-cond-assign': 'off',
-        'no-constant-condition': 'warn',
-        'no-empty': 'warn',
-        'no-unused-vars': 'warn',
-        curly: 'off',
         eqeqeq: [
             'error',
-            'smart'
+            'smart',
         ],
         'no-eval': 'error',
         'no-extend-native': 'error',
@@ -44,132 +36,137 @@ module.exports = {
             'warn',
             {
                 ignore: [0, 1, -1],
-                ignoreArrayIndexes: true
-            }
+                ignoreArrayIndexes: true,
+                enforceConst: true,
+            },
         ],
         'no-multi-str': 'error',
         'no-native-reassign': 'error',
         'no-new-func': 'error',
-        'no-new-wrappers': 'warn',
-        'no-octal': 'warn',
-        'no-octal-escape': 'warn',
+        'no-array-constructor': 'error',
+        'no-new-wrappers': 'error',
         'no-proto': 'error',
         'no-redeclare': 'error',
-        'no-return-assign': 'warn',
+        'no-return-assign': 'error',
         'no-script-url': 'error',
-        'no-self-assign': 'error',
         'no-self-compare': 'error',
-        'no-unmodified-loop-condition': 'warn',
+        'no-unmodified-loop-condition': 'error',
         'no-unused-expressions': [
             'warn',
             {
                 allowShortCircuit: true,
-                allowTernary: true
-            }
+                allowTernary: true,
+            },
         ],
-        'no-useless-call': 'warn',
+        'no-useless-call': 'error',
         'wrap-iife': [
             'warn',
-            'outside'
+            'outside',
         ],
-        yoda: 'warn',
+        yoda: [
+            'error',
+            'never',
+            { exceptRange: true },
+        ],
         'no-shadow-restricted-names': 'error',
-        'no-undef-init': 'warn',
+        'no-undef-init': 'error',
         'array-bracket-spacing': [
             'warn',
-            'never'
+            'never',
         ],
         'block-spacing': [
             'warn',
-            'always'
+            'always',
         ],
         'brace-style': [
-            'warn',
+            'error',
             '1tbs',
-            {
-                allowSingleLine: true
-            }
         ],
         camelcase: [
-            'warn',
-            {
-                properties: 'always'
-            }
+            'error',
+            { properties: 'always' },
         ],
         'comma-spacing': [
-            'warn',
+            'error',
             {
                 before: false,
-                after: true
-            }
+                after: true,
+            },
         ],
         indent: [
             'warn',
             4,
             {
-                SwitchCase: 1
-            }
+                SwitchCase: 1,
+                ObjectExpression: 1,
+                ArrayExpression: 1,
+                flatTernaryExpressions: false,
+            },
         ],
         'key-spacing': [
             'warn',
             {
                 beforeColon: false,
-                afterColon: true
-            }
+                afterColon: true,
+            },
         ],
         'keyword-spacing': [
-            2,
+            'error',
             {
                 before: true,
-                after: true
-            }
+                after: true,
+            },
         ],
-        'new-cap': 'warn',
-        'new-parens': 'warn',
+        'new-cap': 'error',
+        'new-parens': 'error',
         'no-multiple-empty-lines': [
             'warn',
-            {
-                max: 2
-            }
+            { max: 2 },
         ],
-        'no-spaced-func': 'warn',
-        'no-unneeded-ternary': 'warn',
-        'no-whitespace-before-property': 'warn',
+        'no-spaced-func': 'error',
+        'no-unneeded-ternary': 'error',
+        'no-whitespace-before-property': 'error',
         'object-curly-spacing': [
-            'warn',
-            'always'
+            'error',
+            'always',
         ],
+    'template-curly-spacing': ['warn', 'always'],
         'quote-props': [
             'warn',
             'as-needed',
             {
                 keywords: true,
-                unnecessary: false
-            }
+                unnecessary: false,
+            },
         ],
         quotes: [
             'error',
-            'single'
+            'single',
         ],
         semi: [
             'error',
-            'always'
+            'always',
         ],
-        'space-before-blocks': 'warn',
+        'space-before-blocks': 'error',
         'space-before-function-paren': [
-            'warn',
-            'always'
+            'error',
+            'always',
         ],
         'space-in-parens': [
-            'warn',
-            'never'
+            'error',
+            'never',
         ],
         'spaced-comment': [
             'warn',
-            'always'
+            'always',
+        ],
+        'comma-dangle': [
+            'warn',
+            'always-multiline',
+            { functions: 'never' },
         ],
         'no-console': 'warn',
         'no-debugger': 'warn',
-        'no-alert': 'warn'
-    }
+        'eol-last': ['error', 'always'],
+    },
 };
