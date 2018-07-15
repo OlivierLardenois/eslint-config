@@ -1,6 +1,6 @@
 {
     "name": "@nico29/eslint-config-node",
-    "version": "0.3.0",
+    "version": "1.0.1",
     "description": "Common nodeJS eslint rules",
     "main": "index.js",
     "keywords": [
