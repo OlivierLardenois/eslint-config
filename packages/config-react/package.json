@@ -15,5 +15,8 @@
     "dependencies": {
         "@nico29/eslint-config-core": "^2.0.0",
         "eslint-plugin-react": "^7.9.1"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
