@@ -1,6 +1,6 @@
 {
     "name": "@nico29/eslint-config-react",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Common React eslint rules",
     "main": "index.js",
     "keywords": [
@@ -13,7 +13,7 @@
         "eslint-plugin-babel": "^5.1.0"
     },
     "dependencies": {
-        "@nico29/eslint-config-core": "^2.0.0",
+        "@nico29/eslint-config-core": "^2.0.1",
         "eslint-plugin-react": "^7.9.1"
     },
     "publishConfig": {
